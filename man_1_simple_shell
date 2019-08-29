@@ -93,8 +93,6 @@ int myshell_exit(char **args);
 .br
 int myshell_env(char **args);
 .br
-/*int myshell_help(char **args);*/
-.br
 char *_getenv(const char *name);
 .br
 char **split_path(char *path);
