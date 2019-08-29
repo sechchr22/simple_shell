@@ -44,45 +44,85 @@ simple_shell can be run in non-interactive mode through the use of shell scripts
 .SH SHELL HEADER
 
 #ifndef HEADER_FILE
+.br
 #define HEADER_FILE
+.br
 #define _GNU_SOURCE
+.br
 #include <stdio.h>
+.br
 #include <stdlib.h>
+.br
 #include <string.h>
+.br
 #include <unistd.h>
+.br
 #include <sys/types.h>
+.br
 #include <sys/stat.h>
+.br
 #include <sys/wait.h>
+.br
 #include <signal.h>
+.br
 extern char **environ;
+.br
 int _getchar(void);
+.br
 ssize_t _getline(char **linep, ssize_t *line_size, FILE *stream);
+.br
 void sig_handler(int signal);
+.br
 char *read_command(void);
+.br
 char **split_into_arguments(char *line);
+.br
 /* myshell functions */
+.br
 void myshell_loop(void);
+.br
 int myshell_execute(char **args);
+.br
 int myshell_external(char **args);
+.br
 /*Builtin functions*/
+.br
 int myshell_cd(char **args);
+.br
 int myshell_exit(char **args);
+.br
 int myshell_env(char **args);
+.br
 /*int myshell_help(char **args);*/
+.br
 char *_getenv(const char *name);
+.br
 char **split_path(char *path);
+.br
 int _execve(char *path, char **args);
+.br
 void free_double_pointer(char **directories);
+.br
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+.br
 unsigned int _getpid(void);
+.br
 int no_exec_found(char **directories);
+.br
 /*str functions*/
+.br
 int _strncmp(const char *s1, const char *s2, int n);
+.br
 char *_strcat(char *dest, char *src);
+.br
 char *_strcpy(char *dest, char *src);
+.br
 size_t _strlen(const char *s);
+.br
 int _strcmp(char *s1, char *s2);
+.br
 int wait_free_directories(char **directories);
+.br
 #endif
 
 
