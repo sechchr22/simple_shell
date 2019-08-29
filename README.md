@@ -65,6 +65,9 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
 # Description of File Structure
+
+| File | Description |
+| ------ | ------ |
 | builtins.c | Builtin functions |
 
 | free_double_pointer.c | function to free a pointer to an array of string |
