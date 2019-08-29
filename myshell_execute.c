@@ -9,9 +9,9 @@
 int myshell_execute(char **args)
 {
 	int i = 0, builtin_counter = 0;
-	char *builtin_name[] = {"cd", "exit", "env"};
+	char *builtin_name[] = {"cd", "exit", "env", "help"};
 
-	int (*builtin_func[]) (char **) = {&myshell_cd, &myshell_exit, &myshell_env};
+	int (*builtin_func[]) (char **) = {&myshell_cd, &myshell_exit, &myshell_env, &myshell_help};
 
 	if (args == NULL)
 	return (1);

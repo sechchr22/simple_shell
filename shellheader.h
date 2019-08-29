@@ -23,7 +23,7 @@ int myshell_external(char **args);
 int myshell_cd(char **args);
 int myshell_exit(char **args);
 int myshell_env(char **args);
-/*int myshell_help(char **args);*/
+int myshell_help(char **args);
 char *_getenv(const char *name);
 char **split_path(char *path);
 int _execve(char *path, char **args);
