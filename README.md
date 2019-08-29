@@ -89,6 +89,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ### Development
 
 Sergio Rueda
+
 Mary Serna
 
 License
