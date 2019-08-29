@@ -57,9 +57,9 @@ int myshell_help(__attribute__((unused)) char **args)
 	write(STDOUT_FILENO, "  example: exit\n", 16);
 	write(STDOUT_FILENO, "\n", 1);
 	write(STDOUT_FILENO, "  help - display useful information\n", 36);
-	write(STDOUT_FILENO, "  example: help, not currently working with more arguments\n", 59);
-        write(STDOUT_FILENO, "\n", 1);
-	write(STDOUT_FILENO, "  Also support commands that exists in PATH like\n", 49);
+	write(STDOUT_FILENO, "  example: help\n", 16);
+	write(STDOUT_FILENO, "\n", 1);
+	write(STDOUT_FILENO, "  Also support commands like\n", 29);
 	write(STDOUT_FILENO, "  cp - copy files and directories\n", 35);
 	write(STDOUT_FILENO, " clear - clear the terminal screen\n", 36);
 	write(STDOUT_FILENO, " cat - print on the standard output\n", 37);
