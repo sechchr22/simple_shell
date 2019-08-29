@@ -66,20 +66,35 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 # Description of File Structure
 | builtins.c | Builtin functions |
+
 | free_double_pointer.c | function to free a pointer to an array of string |
+
 | _getenv.c | Function to get an environmnet variable |
+
 | _getline.c | Our get_line function |
+
 | hsh.c | Shell main function |
+
 | myshell_execute.c | Shell execute |
+
 | read_command.c | Read the command that the user will type |
+
 | _realloc.c | Function to realloc space of memory |
+
 | split_into_arguments.c | Function to split the line indexed |
+
 | split_path.c | Function to split env variable PATH into tokens |
+
 | _strcat.c | Function to happen when executable is not founded |
+
 | _strcmp.c | Function to compare two strings lexicographically |
+
 | _strcpy.c | Function to copi strings |
+
 | _strlen.c | Run to lenght of the string |
+
 | _strncmp.c | Function to compare strings until an  n index |
+
 | wait_free_directories | Functions to wait an free a double pointer |
 
 
