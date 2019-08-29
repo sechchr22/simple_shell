@@ -29,30 +29,24 @@ $ echo "qwerty" | ./././hsh
 ./././hsh: 1: qwerty: not found
 $
 ```
-# Testing
-Your shell should work like this in interactive mode:
+##  Example
+ 
+# Interactive Mode
 ```sh
-$ ./hsh
-($) /bin/ls
-hsh main.c shell.c
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ ./hsh
+($)ls
+AUTHORS    _getenv.c   _realloc.c  _strcmp.c  _strlen.c   builtins.c		 hsh	man_1_simple_shell  read_command.c  split_into_arguments.c
+README.md  _getline.c  _strcat.c   _strcpy.c  _strncmp.c  free_double_pointer.c  hsh.c	myshell_execute.c   shellheader.h   split_path.c
 ($)
-($) exit
-$
 ```
-But also in non-interactive mode:
+## Non-interactive Mode
+
 ```sh
-$ echo "/bin/ls" | ./hsh
-hsh main.c shell.c test_ls_2
-$
-$ cat test_ls_2
-/bin/ls
-/bin/ls
-$
-$ cat test_ls_2 | ./hsh
-hsh main.c shell.c test_ls_2
-hsh main.c shell.c test_ls_2
-$
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ echo "ls" | ./hsh 
+AUTHORS    _getenv.c   _realloc.c  _strcmp.c  _strlen.c   builtins.c		 hsh	man_1_simple_shell  read_command.c  split_into_arguments.c
+README.md  _getline.c  _strcat.c   _strcpy.c  _strncmp.c  free_double_pointer.c  hsh.c	myshell_execute.c   shellheader.h   split_path.c
 ```
+
 ## Installing
 To clone the repo (depending on whose repo):
 ```sh
@@ -84,8 +78,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 | _strlen.c | Run to lenght of the string |
 | _strncmp.c | Function to compare strings until an  n index |
 | wait_free_directories | Functions to wait an free a double pointer |
-
-
+ 
 ### Development
 
 Sergio Rueda
