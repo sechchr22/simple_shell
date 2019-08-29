@@ -29,9 +29,9 @@ $ echo "qwerty" | ./././hsh
 ./././hsh: 1: qwerty: not found
 $
 ```
-##  Example
+#  Example
  
-# Interactive Mode
+## Interactive Mode
 ```sh
 vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ ./hsh
 ($)ls
